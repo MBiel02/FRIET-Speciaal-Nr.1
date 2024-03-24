@@ -1,0 +1,402 @@
+body {
+  font-family: "ABCRepro-Medium", Helvetica, Arial, sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/* MENU  */
+
+.menu {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 40px;
+  z-index: 4;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black 0.5px solid;
+  margin: 0 -0.5px -0.5px 0;
+  border-radius: 3px;
+  font-size: 1.5em;
+  height: 60px;
+  width: 150px;
+  font-family: "brother-1816", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dig {
+  background-color:  rgb(17, 128, 212);
+  color: rgb(255, 255, 255);
+}
+
+.index {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+
+
+/* EXCAVATION CONTAINER */
+
+.container {
+  width: 100vw;  
+  height: 100vh; 
+  padding: 120px;
+
+  overflow: auto; 
+  display: grid;
+  grid-template-columns: repeat(11, 330px);
+  grid-template-rows: 330px;
+  grid-auto-flow: row;
+  grid-auto-rows: 330px;
+}
+
+.grid {
+  border: black 0.5px solid;
+  margin: 0 -0.5px -0.5px 0;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.number {
+  border: black 0.5px solid;
+  background-color: white;
+  margin: -0.5px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  border-radius: 3px 0px 3px 0px;
+  font-family: english-grotesque, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  position: absolute;
+  z-index: 2;
+}
+
+/* IMAGES */
+
+
+.finding {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1; /* Initially hidden */
+  transition: opacity 7s linear;
+}
+
+
+.dirt {
+  filter: brightness(500);
+  filter: brightness(5000);
+  mix-blend-mode: screen;
+  transition: opacity 7s linear;
+  opacity: 1;
+  z-index: 1;
+}
+
+.dirt:hover, .dirt:focus {
+  opacity: 0;
+}
+
+
+.grid.item-43 .number {
+  color: rgb(200,0,0); /* Change the color to red */
+}
+
+
+
+.item-1 {
+  grid-area: 12 / 3 / span 1 / span 1;
+}
+
+.item-2 {
+  grid-area: 12 / 4 / span 1 / span 1;
+}
+
+.item-3 {
+  grid-area: 11 / 2 / span 1 / span 1;
+}
+
+.item-4 {
+  grid-area: 10 / 2 / span 1 / span 1;
+}
+
+.item-5 {
+  grid-area: 10 / 1 / span 1 / span 1;
+}
+
+.item-6 {
+  grid-area: 9 / 2 / span 1 / span 1;
+}
+
+.item-7 {
+  grid-area: 9 / 3 / span 1 / span 1;
+}
+
+.item-8 {
+  grid-area: 10 / 4 / span 1 / span 1;
+}
+
+.item-9 {
+  grid-area: 11 / 4 / span 1 / span 1;
+}
+
+.item-10 {
+  grid-area: 11 / 5 / span 1 / span 1;
+}
+
+.item-11 {
+  grid-area: 12 / 5 / span 1 / span 1;
+}
+
+.item-13 {
+  grid-area: 7 / 2 / span 1 / span 1;
+}
+
+.item-14 {
+  grid-area: 7 / 3 / span 1 / span 1;
+}
+
+.item-15 {
+  grid-area: 6 / 2 / span 1 / span 1;
+}
+
+.item-16 {
+  grid-area: 6 / 3 / span 1 / span 1;
+}
+
+.item-17 {
+  grid-area: 5 / 2 / span 1 / span 1;
+}
+
+.item-18 {
+  grid-area: 4 / 1 / span 1 / span 1;
+}
+
+.item-19 {
+  grid-area: 4 / 3 / span 1 / span 1;
+}
+
+.item-20 {
+  grid-area: 3 / 3 / span 1 / span 1;
+}
+
+.item-21 {
+  grid-area: 7 / 4 / span 1 / span 1;
+}
+
+.item-22 {
+  grid-area: 7 / 5 / span 1 / span 1;
+}
+
+.item-23 {
+  grid-area: 10 / 7 / span 1 / span 1;
+}
+
+.item-24 {
+  grid-area: 10 / 8 / span 1 / span 1;
+}
+
+.item-25 {
+  grid-area: 11 / 8 / span 1 / span 1;
+}
+
+.item-26 {
+  grid-area: 12 / 9 / span 1 / span 1;
+}
+
+.item-27 {
+  grid-area: 11 / 9 / span 1 / span 1;
+}
+
+.item-28 {
+  grid-area: 11 / 10 / span 1 / span 1;
+}
+
+.item-29 {
+  grid-area: 10 / 10 / span 1 / span 1;
+}
+
+.item-29 {
+  grid-area: 9 / 10 / span 1 / span 1;
+}
+
+.item-30 {
+  grid-area: 10 / 9 / span 1 / span 1;
+}
+
+.item-31 {
+  grid-area: 9 / 8 / span 1 / span 1;
+}
+
+.item-32 {
+  grid-area: 8 / 7 / span 1 / span 1;
+}
+
+.item-33 {
+  grid-area: 8 / 9 / span 1 / span 1;
+}
+
+.item-34 {
+  grid-area: 7 / 8 / span 1 / span 1;
+}
+
+.item-35 {
+  grid-area: 6 / 8 / span 1 / span 1;
+}
+
+.item-36 {
+  grid-area: 4 / 4 / span 1 / span 1;
+}
+
+.item-37 {
+  grid-area: 3 / 5 / span 1 / span 1;
+}
+
+.item-38 {
+  grid-area: 4 / 7 / span 1 / span 1;
+}
+
+.item-39 {
+  grid-area: 5 / 10 / span 1 / span 1;
+}
+
+.item-40 {
+  grid-area: 2 / 9 / span 1 / span 1;
+}
+
+.item-41 {
+  grid-area: 5 / 11 / span 1 / span 1;
+}
+
+.item-42 {
+  grid-area: 6 / 11 / span 1 / span 1;
+}
+
+.item-43 {
+  grid-area: 5 / 5 / span 1 / span 1;
+}
+
+
+
+/* INFO BOX */
+
+.description-box {
+  grid-area: 9 / 5 / span 1 / span 1;
+  display: grid;
+  grid-template-columns: repeat(6,55px);
+  grid-template-rows: repeat(5,66px);
+}
+
+.info {
+  border: black 0.5px solid;
+  border-radius: 3px;
+  margin: 0 -0.5px -0.5px 0;
+  position: relative;
+  display: flex;
+
+}
+
+.friet {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.f {
+  grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.r {
+  grid-area: 3 / 2 / span 1 / span 1;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: 0.5px solid white;
+  z-index: -1;
+}
+
+.i {
+  grid-area: 3 / 3 / span 1 / span 1;
+}
+
+.e {
+  grid-area: 3 / 4 / span 1 / span 1;
+  background-color: rgb(27, 183, 255);
+  color: white;
+  border: 0.5px solid white;
+  z-index: -1;
+}
+
+.t {
+  grid-area: 3 / 5 / span 1 / span 1;
+}
+
+
+
+.speciaal {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: 3 / 6 / span 1 / span 1 ;
+  font-size: 0.8em;
+  color: rgb(237, 225, 113);
+}
+
+.nr {
+  justify-content: center;
+  align-items: center;
+  grid-area: 4 / 1 / span 1 / span 1;
+  color: rgb(27, 183, 255);
+}
+
+.book-description {
+  grid-area: 4 / 2 / span 1 / span 5 ;
+  justify-content: center;
+  padding: 5px;
+  font-size: 0.8em;
+}
+
+.instruction {
+  justify-content: center;
+  padding: 5px;
+  grid-area: 1 / 1 / span 1 / span 6 ;
+  font-size: 0.8em;
+}
+
+.colophon {
+  grid-area: 5 / 1 / span 1 / span 6 ;
+  justify-content: center;
+  font-size: 0.5em;
+  padding: 5px;
+}
+
+.dig-info {
+  grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.dig-info,
+.colophon,
+.book-description,
+.instruction {
+  justify-content: center;
+  padding: 10px;
+}
