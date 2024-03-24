@@ -112,7 +112,7 @@ a:visited {
   z-index: 1;
 }
 
-.dirt:hover, .dirt:focus {
+.dirt:hover, .dirt:active {
   opacity: 0;
 }
 
