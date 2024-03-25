@@ -137,19 +137,20 @@ a:visited {
   border-radius: 5px 5px 5px 5px;
   display: flex;
   padding: 10px;
-
+  width: 330px;
+  height: 120px;
   font-size: 0.6em;
   padding: 10px;
 }
 
 .footnote-box {
   color: rgb(200,0,0);
-  height: 120px;
+  width: 330px;
 }
 
 .colophon-box {
   margin-left: -0.5px;
-  height: 120px;
+  width: 330px;
 }
 
 
