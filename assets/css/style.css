@@ -12,6 +12,18 @@ a:visited {
 
 /* MENU  */
 
+
+.menu-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; 
+  z-index: 1000;
+}
+
 .menu {
   display: flex;
   position: fixed;
@@ -99,22 +111,26 @@ a:visited {
   top: 0;
   left: 0;
   opacity: 1; /* Initially hidden */
-  transition: opacity 1s linear;
+  transition: 3s linear;
+  margin: 5px;
+  filter:saturate(1);
 }
 
 
 .dirt {
   filter: brightness(500);
   filter: brightness(5000);
-  width: 90%;
-  margin: 5%;
-  mix-blend-mode: screen;
-  transition: opacity 1s linear;
+  filter: blur(1000);
+  margin: 5px;
+  mix-blend-mode:screen;
+  transition: 3s linear;
   opacity: 1;
   z-index: 1;
 }
 
-.dirt:hover, .dirt:active {
+.dirt:hover, 
+.dirt:active,
+.dirt:focus {
   opacity: 0;
 }
 
