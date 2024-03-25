@@ -112,7 +112,7 @@ a:visited {
   left: 0;
   opacity: 1; /* Initially hidden */
   transition: 1s linear;
-  margin: 5px;
+  margin: 2%;
   filter:saturate(1);
 }
 
@@ -121,7 +121,7 @@ a:visited {
   filter: brightness(500);
   filter: brightness(5000);
   filter: blur(1000);
-  margin: 20px;
+  margin: 10%;
   mix-blend-mode:screen;
   transition: 1s linear;
   opacity: 1;
