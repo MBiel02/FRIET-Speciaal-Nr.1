@@ -106,6 +106,8 @@ a:visited {
 .dirt {
   filter: brightness(500);
   filter: brightness(5000);
+  width: 90%;
+  margin: 5%;
   mix-blend-mode: screen;
   transition: opacity 7s linear;
   opacity: 1;
