@@ -100,7 +100,7 @@ a:visited {
   font-weight: 300;
   font-style: normal;
   position: absolute;
-  z-index: 2;
+  z-index: 999;
 }
 
 /* IMAGES */
