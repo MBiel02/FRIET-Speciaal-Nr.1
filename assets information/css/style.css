@@ -15,15 +15,27 @@ a:visited {
 
 /* MENU  */
 
+.menu-container {
+  position: fixed;
+  top: 0; /* Adjust this value as needed */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; /* Adjust this value as needed */
+
+  z-index: 1000; /* Ensure it's above other content */
+}
+
 .menu {
   display: flex;
-  position: fixed;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  top: 40px;
-  z-index: 3;
+  max-width: 1536px;
 }
+
 
 .menu-item {
   display: flex;
@@ -85,14 +97,16 @@ a:visited {
 /* CONTENT IN GRID */
 
 .number-box,
-.description {
+.description,
+.footnote,
+.colophon {
   background-color: white;
   border: black 0.5px solid;
   margin: 0 -0.5px -0.5px 0;
   border-radius: 5px 5px 5px 5px;
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 250px;
 }
 
 .number-box {
@@ -122,42 +136,27 @@ a:visited {
   font-size: 0.6em;
   padding: 10px;
   color: rgb(17, 128, 212);
-  line-height: 1.4em;
   font-family: "brother-1816", sans-serif;
   font-weight: 500;
   font-style: normal;
   line-height: 1.3em;
 }
 
-.footnote-box, .colophon-box {
-  width: 100%;
-  background-color: white;
-  border: black 0.5px solid;
-  margin: 0 -0.5px -0.5px 0;
-  border-radius: 5px 5px 5px 5px;
-  display: flex;
+.footnote,
+.colophon {
   padding: 10px;
-  width: 330px;
-  height: 120px;
   font-size: 0.6em;
   padding: 10px;
+  width: 310px;
+  height: 100px;
+  margin: 0px -0.5px -0.5px -0.5px;
+
 }
 
-.footnote-box {
+.footnote {
   color: rgb(200,0,0);
-  width: 330px;
 }
 
-.colophon-box {
-  margin-left: -0.5px;
-  width: 330px;
-}
-
-
-
-p {
- line-height: 1.3em;
-}
 
 
 @media (min-width:475px) {
