@@ -121,7 +121,7 @@ a:visited {
   filter: brightness(500);
   filter: brightness(5000);
   filter: blur(1000);
-  margin: 5px;
+  margin: 10px;
   mix-blend-mode:screen;
   transition: 3s linear;
   opacity: 1;
