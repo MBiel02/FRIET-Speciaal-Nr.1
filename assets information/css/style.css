@@ -148,9 +148,10 @@ a:visited {
   padding: 10px;
   font-size: 0.6em;
   padding: 10px;
-  width: 310px;
+  width: 330px;
   height: 100px;
   margin: 0px -0.5px -0.5px -0.5px;
+  line-height: 1.3em;
 
 }
 
