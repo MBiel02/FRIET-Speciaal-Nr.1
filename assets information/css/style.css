@@ -144,10 +144,12 @@ a:visited {
 
 .footnote-box {
   color: rgb(200,0,0);
+  height: 120px;
 }
 
 .colophon-box {
   margin-left: -0.5px;
+  height: 120px;
 }
 
 
