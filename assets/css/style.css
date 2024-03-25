@@ -38,8 +38,6 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: black 0.5px solid;
-  margin: 0 -0.5px -0.5px 0;
   border-radius: 3px;
   font-size: 1.5em;
   height: 60px;
@@ -52,11 +50,15 @@ a:visited {
 .dig {
   background-color:  rgb(17, 128, 212);
   color: rgb(255, 255, 255);
+  border: black 0.5px solid;
+  margin: 0 -0.5px -0.5px 0;
 }
 
 .index {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+  border: black 0.5px solid;
+  margin: 0 -0.5px -0.5px 0;
 }
 
 
@@ -88,7 +90,6 @@ a:visited {
 .number {
   border: black 0.5px solid;
   margin: 0 -0.5px -0.5px 0;
-  background-color: white;
   margin: -0.5px;
   width: 80px;
   height: 80px;
